@@ -4,6 +4,11 @@ body {
 	margin: auto;    
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.light-theme {
+    background-color: white;
+  color: black;
+     
+}
 #nav-header {
     background-color: darkcyan;
     color: white;

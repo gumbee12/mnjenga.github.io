@@ -20,9 +20,14 @@ btn.onclick = onBtnClick
 sendmess.onclick = sendMessage
 logol.onclick = lightTheme
 
-function lightTheme(){
-    document.style.backgroundColor = colorl
-    alert("color changed")
-
-
+function lightTheme() {
+        var element = document.body;
+        element.classList.toggle("light-theme");
+        document.getElementById("logol").childNodes[0].nodeValue=
+   "New Button Text using childNodes";
 }
+function darkTheme() {
+    var element = document.body;
+    element.classList.toggle("light-theme");
+}
+
