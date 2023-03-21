@@ -1,0 +1,113 @@
+body {
+    background-color: black;
+    color: white;    
+	margin: auto;    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#nav-header {
+    background-color: darkcyan;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+}
+#nav-footer {
+    background-color: darkcyan;
+    color: white;   
+    padding: 1px 2px;
+}
+#nav-header a {
+    color: white;
+    display: block;
+    text-decoration: none;
+}
+.nav-container 
+{
+    display: flex;
+    gap: 16px;
+}
+.nav-container a {
+    padding: 8px;
+    background-color: brown;
+}
+section {
+    background-color: green;
+    height: fit-content;
+    width: 90%;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: 64px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+}
+#home {
+    background: green;
+    display: flex;
+    gap: 32px;
+    margin-top: 64px;
+}
+#home > * {
+    flex: 1;
+}
+.img {
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+}
+.img1 {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+}
+.img-container {
+    width: fit-content;
+    height: 30%;
+}
+.text-container {
+    font-size: 2rem; 
+    width: fit-content;
+    height: fit-content;
+}
+#btn {
+    padding: 8px 16px;
+    color: white;
+    background-color: darkcyan;
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: 0.5s;
+}
+#btn:hover{
+    background-color: blue;
+}
+#sendmess {
+    padding: 4px 8px;
+    color: white;
+    background-color: darkcyan;
+    font-size: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#sendmess:hover{
+    background-color: blue;
+}
+#logod{
+    background-color: darkcyan;
+    border: none;
+    transition: 0.5s;
+}
+#logod:hover{
+    background-color: black;
+}
+#logol{
+    background-color: darkcyan;
+    border: 1px;  
+    transition: 0.5s;  
+}
+#logol:hover{
+    background-color: white;
+}
+.websitees{
+    height: 100%;
+
+}

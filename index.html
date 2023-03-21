@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    
+    <header id="nav-header">
+        
+        <button id="logod" style="color: white;"><img src="melogo.jpg" alt="logo" class="img" tiling>dark</button>
+        <button id="logol" onclick=" lightTheme()"><img src="melogo-001.jpg" alt="logo" class="img" tiling>light</button>
+        <div class="nav-container">
+            <a href="index.html" target="_self">Home</a>
+            <a href="about.html" target="_parent">About</a>
+            
+        </div>
+    </header>
+    <!--img src="snapshot.jpg " alt="me" style="width: 100%"-->
+    <section id="home">
+        <div class="img-container">
+            <img src="snapshot1.jpg" alt="logo" class="img1" tiling>
+        </div>
+        <div class="text-container">
+            <p><b>NAME</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;MUGAMBI NJENGA<br>
+            <b>PROFESSION</b>&nbsp;&nbsp; :&nbsp;&nbsp;STUDENT<br>
+            <b>AGE</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;21<BR>
+            <b>NATIONALITY</b>&nbsp;:&nbsp;&nbsp;KENYAN<br></p>
+
+            <button id="btn">
+                Change color
+            </button>
+           
+        </div>
+    </section>
+    <footer id="nav-footer">
+
+        <h2>Contact me</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit" id="sendmess">Send message</button>
+        </form>
+            <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+        
+        
+    </footer>
+</body>
+</html>
