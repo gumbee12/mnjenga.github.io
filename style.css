@@ -1,31 +1,27 @@
 body {
-    background-color: black;
     color: white;    
 	margin: auto;    
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.light-theme {
-    background-color: white;
-  color: black;
-     
-}
 #nav-header {
-    background-color: darkcyan;
+    background-color: rgb(15, 4, 61);
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 16px 32px;
+    position: relative;
 }
 #nav-footer {
-    background-color: darkcyan;
+    background-color:rgb(15, 4, 61);
     color: white;   
     padding: 1px 2px;
+    position: relative;
 }
 #nav-header a {
     color: white;
     display: block;
-    text-decoration: none;
+    text-decoration:wavy;
 }
 .nav-container 
 {
@@ -37,7 +33,7 @@ body {
     background-color: brown;
 }
 section {
-    background-color: green;
+    background-color: rgb(2, 51, 2);
     height: fit-content;
     width: 90%;
     padding: 1rem;
@@ -46,21 +42,19 @@ section {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 32px;
+    position: relative;
 }
 #home {
-    background: green;
+    background:rgb(2, 51, 2);
     display: flex;
     gap: 32px;
     margin-top: 64px;
+    position: relative;
 }
 #home > * {
     flex: 1;
 }
-.img {
-    width: 30%;
-    height: 30%;
-    border-radius: 50%;
-}
+
 .img1 {
     width: 90%;
     height: 90%;
@@ -69,6 +63,7 @@ section {
 .img-container {
     width: fit-content;
     height: 30%;
+    
 }
 .text-container {
     font-size: 2rem; 
@@ -78,7 +73,7 @@ section {
 #btn {
     padding: 8px 16px;
     color: white;
-    background-color: darkcyan;
+    background-color: rgb(15, 4, 61);
     font-size: 2rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     transition: 0.5s;
@@ -89,30 +84,92 @@ section {
 #sendmess {
     padding: 4px 8px;
     color: white;
-    background-color: darkcyan;
+    background-color: rgb(15, 4, 61);
     font-size: 1rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 #sendmess:hover{
     background-color: blue;
 }
-#logod{
-    background-color: darkcyan;
-    border: none;
-    transition: 0.5s;
-}
-#logod:hover{
-    background-color: black;
-}
-#logol{
-    background-color: darkcyan;
-    border: 1px;  
-    transition: 0.5s;  
-}
-#logol:hover{
-    background-color: white;
-}
+
 .websitees{
     height: 100%;
 
+}
+video {
+    position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -1;
+  }
+  
+  .container {
+    perspective: 800px;
+    border-radius: 5px;
+  }
+  
+  .text {
+    display: inline-block;
+    position: relative;
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background: linear-gradient(to bottom right, #ef233c, #d90429);
+    padding: 0.2em 0.5em;
+    transform-style: preserve-3d;
+    animation: rotate 6s linear infinite;
+    
+  }
+  
+  @keyframes rotate {
+    0% { transform: rotateY(0deg) rotateX(0deg); }
+    50% { transform: rotateY(180deg) rotateX(0deg); }
+    100% { transform: rotateY(360deg) rotateX(0deg); }
+  }
+  .my-button {
+	display: inline-block;
+	position: relative;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	background-color:  rgb(15, 4, 61);
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	transition: background-color 0.5s ease-in-out;
+}
+.my-button:hover{
+    background-color: black;}
+.my-button img {
+	display: block;
+	margin: 0 auto 10px;
+	max-width: 100%;
+	width: 30%;
+    height: 30%;
+    border-radius: 50%;
+}
+
+.my-button span {
+	display: block;
+	text-align: center;
+}
+
+.my-button:active {
+	background-color: white;
+}
+
+.my-button:active img {
+	content: url("melogo-001.jpg");
+}
+
+.my-button:active span {
+	content: "light";
+    color: black;
 }
